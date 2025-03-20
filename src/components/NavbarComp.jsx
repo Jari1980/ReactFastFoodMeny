@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
 import { Navbar, Container, Button, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useThemeContext } from './context';
 
 
 const NavbarComp = () => {
+  const {background, setBackground} = useThemeContext("")
   const [dark, setDark] = useState(false)
+  
 
   function handleClick(){
     if(dark){
       setDark(false)
+      setBackground("yellow")
     }
     else{
       setDark(true)
+      setBackground("gray")
     }
   }
 
