@@ -1,14 +1,123 @@
-import React from 'react';
-import { useThemeContext } from './context';
+import React, { useState } from "react";
+import { useThemeContext } from "./context";
+import menyItemData from "../data/MenyItems"
+import CardComp from "./CardComp"
 
 const Meny = () => {
-    const {background, setBackground} = useThemeContext("")
+  const { background, setBackground } = useThemeContext("");
 
-    return (
-        <div style={{background: background}}>
-            <p>This is meny component, will add components to this</p>
-        </div>
+  const [ order, setOrder ] = useState([{}])
+
+  const mainFood = menyItemData.filter(item => item.category === "Main");
+  const mainFoodList = mainFood.map((data) => {
+    const cardElement = (
+      <CardComp
+        key={data.id}
+        id={data.id}
+        title={data.title}
+        category={data.category}
+        description={data.description}
+        img={data.image}
+        price={data.price}
+      />
     );
+    return cardElement;
+  });
+
+  const proteinFood = menyItemData.filter(item => item.category === "Protein");
+  const proteinFoodList = proteinFood.map((data) => {
+    const cardElement = (
+      <CardComp
+        key={data.id}
+        id={data.id}
+        title={data.title}
+        category={data.category}
+        description={data.description}
+        img={data.image}
+        price={data.price}
+      />
+    );
+    return cardElement;
+  });
+
+  const drinkFood = menyItemData.filter(item => item.category === "Drink");
+  const drinkFoodList = drinkFood.map((data) => {
+    const cardElement = (
+      <CardComp
+        key={data.id}
+        id={data.id}
+        title={data.title}
+        category={data.category}
+        description={data.description}
+        img={data.image}
+        price={data.price}
+      />
+    );
+    return cardElement;
+  });
+  
+  const additiveFood = menyItemData.filter(item => item.category === "Additive");
+  const additivekFoodList = additiveFood.map((data) => {
+    const cardElement = (
+      <CardComp
+        key={data.id}
+        id={data.id}
+        title={data.title}
+        category={data.category}
+        description={data.description}
+        img={data.image}
+        price={data.price}
+      />
+    );
+    return cardElement;
+  });
+
+
+  function addFood(id){
+    setOrder(order + menyItems[id])
+  }
+
+  return (
+    <div style={{ background: background }}>
+      <div className="container">
+        <h1>Meny Add some fancy style</h1>
+        <span id="mainCourseSpan" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Main course</span>
+        <div
+          className="row row-cols-1 row-cols-sm-3 g-3"
+          id="cardContainerInner"
+        >
+         {mainFoodList}
+        </div>
+        <span id="mainCourseSpan" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Proteins</span>
+        <div
+          className="row row-cols-1 row-cols-sm-3 g-3"
+          id="cardContainerInner"
+        >
+          {proteinFoodList}
+        </div>
+        <span id="mainCourseSpan" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Drinks</span>
+        <div
+          className="row row-cols-1 row-cols-sm-3 g-3"
+          id="cardContainerInner"
+        >
+          {drinkFoodList}
+        </div>
+        <span id="mainCourseSpan" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Drinks</span>
+        <div
+          className="row row-cols-1 row-cols-sm-3 g-3"
+          id="cardContainerInner"
+        >
+          {additivekFoodList}
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className="container">
+        <span id="orderSpan">Your order</span>
+        
+      </div>
+    </div>
+  );
 };
 
 export default Meny;
