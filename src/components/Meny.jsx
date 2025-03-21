@@ -7,6 +7,7 @@ import { Button } from "react-bootstrap";
 import Order from "./Order";
 
 
+
 const Meny = () => {
   const { background, setBackground } = useThemeContext("");
 
@@ -117,7 +118,7 @@ const Meny = () => {
       <br />
       <br />
       <div className="container">
-        <span id="orderSpan">Your order</span>
+        <span id="titleSpan">Your order</span>
         <Order />
       </div>
     </div>
