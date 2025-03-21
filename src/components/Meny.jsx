@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import { useThemeContext } from "./context";
 import menyItemData from "../data/MenyItems"
 import CardComp from "./CardComp"
+import './meny.css';
+import { Button } from "react-bootstrap";
+import Order from "./Order";
+
 
 const Meny = () => {
   const { background, setBackground } = useThemeContext("");
 
-  const [ order, setOrder ] = useState([{}])
+  const { order, setOrder } = useThemeContext("");
 
   const mainFood = menyItemData.filter(item => item.category === "Main");
   const mainFoodList = mainFood.map((data) => {
@@ -72,9 +76,9 @@ const Meny = () => {
     return cardElement;
   });
 
-
-  function addFood(id){
-    setOrder(order + menyItems[id])
+  
+  function checkOrder(){
+    console.log(order)
   }
 
   return (
@@ -114,7 +118,7 @@ const Meny = () => {
       <br />
       <div className="container">
         <span id="orderSpan">Your order</span>
-        
+        <Order />
       </div>
     </div>
   );
