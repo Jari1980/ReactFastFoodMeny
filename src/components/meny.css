@@ -5,3 +5,14 @@
     justify-Content: center;
     align-Items: center;
 }
+
+#titleSpan {
+    font-size: large;
+    font-weight: 900;
+    display: flex;
+    justify-Content: center;
+    align-Items: center;
+    padding-Top: "30px";
+    padding-bottom: "50px"!important;
+    color: #0d0c11 !important;
+}
