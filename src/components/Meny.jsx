@@ -87,7 +87,7 @@ const Meny = () => {
   return (
     <div style={{ backgroundColor: background,  backgroundImage: "repeating-radial-gradient( circle at 0 0, transparent 0,rgb(113, 113, 148) 20px ), repeating-linear-gradient(rgba(35, 41, 150, 0.33),rgb(137, 139, 172) )"}}>
       <div className="container">
-        <h1>Meny Add some fancy style</h1>
+        <h1 id="header">Chateu De Broccoli - Offers today</h1>
         <span className="courseSpan">Main course</span>
         <div
           className="row row-cols-1 row-cols-sm-3 gap-5"
