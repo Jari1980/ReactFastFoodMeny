@@ -34,7 +34,7 @@ const Order = (props) => {
 
   return (
     <div>
-      <Table striped bordered hover>
+      <Table striped bordered hover variant="dark">
         <thead>
           <tr>
             <th>Food</th>
