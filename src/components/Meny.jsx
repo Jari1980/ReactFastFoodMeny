@@ -23,7 +23,7 @@ const Meny = () => {
         category={data.category}
         description={data.description}
         img={data.image}
-        price={data.price}
+        price={data.price.toFixed(2)}
       />
     );
     return cardElement;
@@ -39,7 +39,7 @@ const Meny = () => {
         category={data.category}
         description={data.description}
         img={data.image}
-        price={data.price}
+        price={data.price.toFixed(2)}
       />
     );
     return cardElement;
@@ -55,7 +55,7 @@ const Meny = () => {
         category={data.category}
         description={data.description}
         img={data.image}
-        price={data.price}
+        price={data.price.toFixed(2)}
       />
     );
     return cardElement;
@@ -71,7 +71,7 @@ const Meny = () => {
         category={data.category}
         description={data.description}
         img={data.image}
-        price={data.price}
+        price={data.price.toFixed(2)}
       />
     );
     return cardElement;
@@ -88,28 +88,28 @@ const Meny = () => {
     <div style={{ backgroundColor: background,  backgroundImage: "repeating-radial-gradient( circle at 0 0, transparent 0,rgb(113, 113, 148) 20px ), repeating-linear-gradient(rgba(35, 41, 150, 0.33),rgb(137, 139, 172) )"}}>
       <div className="container">
         <h1>Meny Add some fancy style</h1>
-        <span id="mainCourseSpan" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Main course</span>
+        <span className="courseSpan">Main course</span>
         <div
           className="row row-cols-1 row-cols-sm-3 g-3"
           id="cardContainerInner"
         >
          {mainFoodList}
         </div>
-        <span id="mainCourseSpan" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Proteins</span>
+        <span className="courseSpan">Proteins</span>
         <div
           className="row row-cols-1 row-cols-sm-3 g-3"
           id="cardContainerInner"
         >
           {proteinFoodList}
         </div>
-        <span id="mainCourseSpan" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Drinks</span>
+        <span className="courseSpan">Drinks</span>
         <div
           className="row row-cols-1 row-cols-sm-3 g-3"
           id="cardContainerInner"
         >
           {drinkFoodList}
         </div>
-        <span id="mainCourseSpan" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Drinks</span>
+        <span className="courseSpan">Drinks</span>
         <div
           className="row row-cols-1 row-cols-sm-3 g-3"
           id="cardContainerInner"
