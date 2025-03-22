@@ -3,7 +3,7 @@ import React, {createContext, useContext, useState} from 'react'
 const ThemeContext = createContext()
 
 export const ThemeProvider = ({ children }) => {
-    const [background, setBackground] = useState("yellow")
+    const [background, setBackground] = useState("rgb(147, 147, 170)")
     const [ order, setOrder ] = useState([])
 
     return (

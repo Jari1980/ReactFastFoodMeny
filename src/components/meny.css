@@ -17,3 +17,15 @@
     color: #0d0c11 !important;
 }
 
+.courseSpan {
+    -webkit-text-stroke: 2px rgb(44, 103, 180);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+    color: #312b4b;
+    font-size: 28px;
+    font-weight: 900;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}

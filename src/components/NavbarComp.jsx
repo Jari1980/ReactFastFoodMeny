@@ -13,17 +13,14 @@ const NavbarComp = () => {
   function handleClick(){
     if(dark){
       setDark(false)
-      setBackground("rgb(7, 7, 46)")
-
-      // setBackground("yellow")
+      setBackground("rgb(147, 147, 170)")
     }
     else{
       setDark(true)
-      setBackground("rgb(147, 147, 170)")
-      // setBackground("gray")
+      setBackground("rgb(7, 7, 46)")
     }
   }
-
+  
  
 
     return (

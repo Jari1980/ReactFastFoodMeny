@@ -5,7 +5,7 @@ const menyItemData = [
     category: "Main",
     description: "Delicious must have",
     image: "https://placehold.co/150",
-    price: 14.9,
+    price: 14.90,
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const menyItemData = [
     category: "Main",
     description: "Very good",
     image: "https://placehold.co/150",
-    price: 9.9,
+    price: 9.90,
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const menyItemData = [
     category: "Main",
     description: "Round crispy balls",
     image: "https://placehold.co/150",
-    price: 19.9,
+    price: 19.90,
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const menyItemData = [
     category: "Protein",
     description: "Good protein",
     image: "https://placehold.co/150",
-    price: 40.0,
+    price: 40.00,
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const menyItemData = [
     category: "Protein",
     description: "Expensive protein",
     image: "https://placehold.co/150",
-    price: 300.0,
+    price: 300.00,
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const menyItemData = [
     category: "Additive",
     description: "Nice and tasty",
     image: "https://placehold.co/150",
-    price: 15,
+    price: 15.00,
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const menyItemData = [
     category: "Drink",
     description: "Clear water from crane",
     image: "https://placehold.co/150",
-    price: 5,
+    price: 5.00,
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const menyItemData = [
     category: "Drink",
     description: "White and cold",
     image: "https://placehold.co/150",
-    price: 15,
+    price: 15.00,
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const menyItemData = [
     category: "Drink",
     description: "Cold and lots of B vitamine",
     image: "https://placehold.co/150",
-    price: 20,
+    price: 20.00,
   },
 ];
 
