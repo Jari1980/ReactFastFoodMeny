@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import menyItemData from "../data/MenyItems"
 import { useThemeContext } from './context';
+import './cardComp.css';
 
 const CardComp = (props) => {
     const { order, setOrder } = useThemeContext("");
@@ -14,18 +15,18 @@ const CardComp = (props) => {
       
 
   return (
-    <Card key={props.id} style={{ width: "18rem" }}>
+    <Card className="card" key={props.id}>
       <Card.Img variant="top" src={props.img} alt="..." />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>
-          <span>{props.description}</span>
+      <Card.Body >
+        <Card.Title className="cardTextBg">{props.title}</Card.Title>
+        <Card.Text className="cardText">
+          <span className="cardTextDescription">{props.description}</span>
           <br />
           <br />
           <span>SEK {props.price}</span>
         </Card.Text>
-        <Button variant="primary" onClick={() => addFood(props.id)}>
-          Add to order
+        <Button className="cardButton" variant="primary" onClick={() => addFood(props.id)}>
+          Add order
         </Button>
       </Card.Body>
     </Card>

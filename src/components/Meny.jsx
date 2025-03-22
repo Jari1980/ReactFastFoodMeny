@@ -90,28 +90,28 @@ const Meny = () => {
         <h1>Meny Add some fancy style</h1>
         <span className="courseSpan">Main course</span>
         <div
-          className="row row-cols-1 row-cols-sm-3 g-3"
+          className="row row-cols-1 row-cols-sm-3 gap-5"
           id="cardContainerInner"
         >
          {mainFoodList}
         </div>
         <span className="courseSpan">Proteins</span>
         <div
-          className="row row-cols-1 row-cols-sm-3 g-3"
+          className="row row-cols-1 row-cols-sm-3 gap-5"
           id="cardContainerInner"
         >
           {proteinFoodList}
         </div>
         <span className="courseSpan">Drinks</span>
         <div
-          className="row row-cols-1 row-cols-sm-3 g-3"
+          className="row row-cols-1 row-cols-sm-3 gap-5"
           id="cardContainerInner"
         >
           {drinkFoodList}
         </div>
-        <span className="courseSpan">Drinks</span>
+        <span className="courseSpan">Additive</span>
         <div
-          className="row row-cols-1 row-cols-sm-3 g-3"
+          className="row row-cols-1 row-cols-sm-3 gap-5"
           id="cardContainerInner"
         >
           {additivekFoodList}
@@ -128,3 +128,7 @@ const Meny = () => {
 };
 
 export default Meny;
+
+
+
+        
