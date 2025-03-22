@@ -1,0 +1,33 @@
+.card {
+  background: linear-gradient(150deg, #9795b180 50%, transparent 0),
+    linear-gradient(-90deg, #848adf80 50%, transparent 0);
+  background-size: 2em 2em;
+  background-color: #ffffff;
+  width: 18rem !important;
+}
+
+.cardText {
+  font-size: large;
+  font-weight: 600;
+}
+
+.cardTextDescription {
+  text-decoration: rgb(45, 29, 139) wavy underline;
+}
+
+.cardButton {
+  margin: 0 auto;
+  background-image: linear-gradient(144deg, #9c93b1, #5b42f3 50%, #585566);
+  border-radius: 20px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 20px 25px;
+}
