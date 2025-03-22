@@ -8,17 +8,23 @@ const NavbarComp = () => {
   const {background, setBackground} = useThemeContext("")
   const [dark, setDark] = useState(false)
   
+  
 
   function handleClick(){
     if(dark){
       setDark(false)
-      setBackground("yellow")
+      setBackground("rgb(7, 7, 46)")
+
+      // setBackground("yellow")
     }
     else{
       setDark(true)
-      setBackground("gray")
+      setBackground("rgb(147, 147, 170)")
+      // setBackground("gray")
     }
   }
+
+ 
 
     return (
         <>
